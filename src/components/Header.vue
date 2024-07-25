@@ -8,7 +8,9 @@
 </script>
 
 <template>
-  <nav></nav>
+  <nav>
+    <div>DE</div>
+  </nav>
   <h1>Portfolio de Dylan Eglantine</h1>
 </template>
 
@@ -19,6 +21,20 @@ header {
 nav {
   background-color: #6fc1cf;
   padding: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav > div {
+  background-color: #334447;
+  color: white;
+  width: 25px;
+  font-weight: bold;
+
+  text-align: center;
+  padding: 3px;
+  border-radius: 50%;
 }
 
 h1 {
