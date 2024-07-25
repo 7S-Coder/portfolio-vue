@@ -23,16 +23,29 @@ import Story from "./components/Story.vue";
   </footer>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+.centered {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1 {
+  color: #6fc1cf;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+h1,
+h2,
+h3 {
+  font-family: "Courier New", Courier, monospace;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 437px) {
 }
 </style>

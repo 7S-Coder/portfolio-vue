@@ -9,18 +9,58 @@
 
 <template>
   <form action="POST" name="contact">
+    <h2>Contact</h2>
     <div>
       <label for="name">Nom :</label>
-      <input id="name" name="name" type="text" />
+      <input id="name" name="name" type="text" required />
 
       <label for="first-name">Prénom :</label>
-      <input id="first-name" name="first-name" type="text" />
+      <input id="first-name" name="first-name" type="text" required />
     </div>
 
     <label for="content">Contenu du message :</label>
+    <textarea id="content" name="content" required></textarea>
 
-    <textarea id="content" name="content"></textarea>
+    <button type="submit" id="submit">Envoyer</button>
   </form>
 </template>
 
-<style scoped></style>
+<style scoped>
+form {
+  background-color: #e4d7c4;
+  color: white;
+  margin-top: 20px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content,
+form > div input {
+  box-shadow: none;
+  border-color: white;
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+#submit {
+  width: 100%;
+  height: 40px;
+  align-self: center;
+
+  border-color: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  color: white;
+  background-color: black;
+}
+</style>

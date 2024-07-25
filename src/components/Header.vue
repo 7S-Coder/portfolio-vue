@@ -8,14 +8,21 @@
 </script>
 
 <template>
-  <nav>
-    <div class="wrap-menu">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </nav>
+  <nav></nav>
   <h1>Portfolio de Dylan Eglantine</h1>
 </template>
 
-<style scoped></style>
+<style scoped>
+header {
+  margin-bottom: 20px;
+}
+nav {
+  background-color: #6fc1cf;
+  padding: 10px;
+}
+
+h1 {
+  margin: 15px;
+  text-align: center;
+}
+</style>

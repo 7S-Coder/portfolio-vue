@@ -9,4 +9,9 @@
 
 <template></template>
 
-<style scoped></style>
+<style scoped>
+footer {
+  background-color: black;
+  color: white;
+}
+</style>
