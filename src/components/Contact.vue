@@ -19,7 +19,7 @@
     </div>
 
     <label for="content">Contenu du message :</label>
-    <textarea id="content" name="content" required></textarea>
+    <textarea id="content" name="content" rows="10" required></textarea>
 
     <button type="submit" id="submit">Envoyer</button>
   </form>
@@ -47,6 +47,7 @@ form > div input {
 }
 
 h2 {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -58,9 +59,21 @@ h2 {
   border-color: none;
   border-radius: 5px;
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 
   color: white;
   background-color: black;
+}
+
+@media (min-width: 426px) {
+  form {
+    padding: 0 25%;
+  }
+  label {
+  }
+  form div {
+  }
+  form > div input {
+  }
 }
 </style>
