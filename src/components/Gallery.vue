@@ -59,26 +59,26 @@ section {
 section .project {
   background-color: #6fc1cf;
   color: white;
+  transition: ease-in 0.1s;
+  border-radius: 10px;
 }
 
 section .project:hover {
-  background-color: rgba(255, 255, 255, 0.046);
-  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #334447;
+  transform: scale(1.02);
+  z-index: 10;
 }
 
 h3 {
   margin: 10px;
 }
 
-section .project,
-img {
-  border-radius: 10px;
-}
-
 img {
   width: 100%;
   height: 100px;
   object-fit: fill;
+  border-radius: 10px 10px 0 0;
 }
 
 @media (max-width: 425px) {
