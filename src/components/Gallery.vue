@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <section>
+  <section id="gallery">
     <div class="project">
       <img src="../assets/sept.png" alt="test" />
       <h3>Test</h3>
@@ -53,6 +53,7 @@
 <style scoped>
 section {
   margin: 15px;
+  flex-grow: 3;
 }
 
 section .project {
@@ -91,7 +92,8 @@ img {
     justify-content: center;
   }
   section .project {
-    width: 30%;
+    width: 42%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
 
@@ -104,9 +106,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   section .project {
-    width: 45%;
+    width: 35%;
     display: flex;
     margin: 10px;
     margin-bottom: 15px;

@@ -12,11 +12,9 @@ import Story from "./components/Story.vue";
   </header>
 
   <main>
-    <div class="centered">
-      <Story />
-      <Gallery />
-      <Contact />
-    </div>
+    <Story />
+    <Gallery />
+    <Contact />
   </main>
   <footer>
     <Footer />
@@ -24,11 +22,6 @@ import Story from "./components/Story.vue";
 </template>
 
 <style>
-.centered {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +29,7 @@ import Story from "./components/Story.vue";
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 h1 {
   color: #6fc1cf;
 }
@@ -46,6 +40,7 @@ h3 {
   font-family: "Courier New", Courier, monospace;
 }
 
-@media (max-width: 437px) {
+header {
+  padding-top: 25px;
 }
 </style>

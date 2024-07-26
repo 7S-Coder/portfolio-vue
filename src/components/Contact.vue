@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <form action="POST" name="contact">
+  <form action="POST" name="contact" id="contact">
     <h2>Contact</h2>
     <div>
       <label for="name">Nom :</label>

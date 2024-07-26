@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <article class="story">
+  <article id="story">
     <h2>Présentation</h2>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dicta
     quibusdam quos dolor hic reiciendis. Cupiditate inventore modi rem
