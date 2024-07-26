@@ -65,15 +65,14 @@ h2 {
   background-color: black;
 }
 
+#submit:hover {
+  background-color: white;
+  color: black;
+}
+
 @media (min-width: 426px) {
   form {
     padding: 0 25%;
-  }
-  label {
-  }
-  form div {
-  }
-  form > div input {
   }
 }
 </style>

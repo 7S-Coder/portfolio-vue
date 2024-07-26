@@ -61,6 +61,11 @@ section .project {
   color: white;
 }
 
+section .project:hover {
+  background-color: rgba(255, 255, 255, 0.046);
+  color: black;
+}
+
 h3 {
   margin: 10px;
 }
