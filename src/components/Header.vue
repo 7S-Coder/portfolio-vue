@@ -3,11 +3,13 @@
 <template>
   <nav>
     <div>
-      <a href="#"> DE </a>
+      <a href="#">
+        <img src="../assets/sept.png" alt="Photo de moi" width="25px" />
+      </a>
     </div>
     <ul>
       <a href="#story">
-        <li>Préentation</li>
+        <li>Présentation</li>
       </a>
       <a href="#gallery">
         <li>Projets</li>
@@ -21,9 +23,6 @@
 </template>
 
 <style scoped>
-header {
-  /* margin-bottom: 20px; */
-}
 nav {
   position: fixed;
   top: 0px;
@@ -40,7 +39,6 @@ nav {
 
 nav ul {
   display: none;
-  /* margin-right: 10%; */
 }
 
 ul li {
@@ -50,13 +48,17 @@ ul li {
 }
 
 nav > div {
-  background-color: #334447;
-  color: white;
+  background-color: #31787c;
   width: 25px;
+  height: 25px;
   font-weight: bold;
 
   text-align: center;
   padding: 3px;
+}
+
+img,
+nav > div {
   border-radius: 50%;
 }
 
@@ -74,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: #334447;
+  color: #31787c;
 }
 
 @media (min-width: 633px) {

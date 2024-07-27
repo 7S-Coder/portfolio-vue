@@ -21,7 +21,7 @@
 <style scoped>
 form {
   background-color: #e4d7c4;
-  color: white;
+  color: #666666;
   font-size: 1.2em;
   margin-top: 20px;
   padding: 27px 15px;
@@ -34,10 +34,13 @@ form {
 #content,
 form > div input {
   box-shadow: none;
-  border-color: white;
+  border-color: #666666;
   width: 100%;
   border-radius: 5px;
   margin: 5px 0;
+  padding: 4px;
+  font-size: 1.1rem;
+  color: #666666;
 }
 
 h2 {
@@ -55,13 +58,13 @@ h2 {
   margin: 15px 0 20px;
 
   color: white;
-  background-color: #334447;
+  background-color: #31787c;
   transition: 0.25s ease-in-out;
 }
 
 #submit:hover {
   background-color: white;
-  color: black;
+  color: #31787c;
 }
 
 @media (min-width: 426px) {
