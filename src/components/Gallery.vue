@@ -94,15 +94,16 @@ img {
   section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    padding: 0 25%;
   }
   section .project {
     width: 42%;
     max-width: 350px;
     display: flex;
     flex-direction: column;
-
-    margin: 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -110,15 +111,17 @@ img {
   section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
   }
   section .project {
     width: 35%;
     display: flex;
-    margin: 10px;
-    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  section .project {
+    width: 45%;
+    display: flex;
   }
 }
 </style>
