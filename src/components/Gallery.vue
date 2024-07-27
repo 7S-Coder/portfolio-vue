@@ -1,52 +1,89 @@
-<script setup>
-// defineProps({
-//   msg: {
-//     type: String,
-//     required: true,
-//   },
-// });
+<script>
+import Project from "./Project.vue";
+
+export default {
+  name: "App",
+  components: {
+    Project,
+  },
+  data() {
+    return {
+      projects: [
+        {
+          title: "Intégration web avec HTML - CSS",
+          skills: [
+            "Intégrer du contenu conformément à une maquette avec HTML et CSS",
+            "Implémenter une interface responsive avec HTML et CSS",
+          ],
+          github: {
+            title: "Interface du site Booki",
+            link: "https://github.com/7S-Coder/Booki.git",
+          },
+        },
+        {
+          title: "Gestion de projet et outils de développeurs",
+          skills: [
+            "Suivre le déroulement du projet grâce à un outil de gestion de projet",
+            "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+            "Découper une fonctionnalités en tâches pour préparer le développement",
+            "Présenter la solution technique",
+            "Mettre en place une méthode de veille technologique",
+            "Versionner son projet avec Git et Github",
+            "Installer un environnement de développement front- end",
+          ],
+        },
+        {
+          title: "Optimisation et debug",
+          skills: [
+            "Optimiser les performances d’un site web",
+            "Débugger un site web grâce aux Chrome DevTools",
+            "Rédiger un cahier de recette pour tester un site",
+          ],
+          github: {
+            title: "Portfolio de Nina Carducci",
+            link: "https://github.com/7S-Coder/Portfolio-Nina-Carducci.git",
+          },
+        },
+        {
+          title: "Développement web avec JavaScript",
+          skills: [
+            "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
+            "Manipuler les éléments du DOM avec JavaScript",
+            "Gérer les événements utilisateurs avec JavaScript",
+          ],
+        },
+        {
+          title: "React",
+          skills: [
+            "Configurer la navigation entre les pages de l'application avec React Router",
+            "Initialiser une application avec Create React App",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React",
+          ],
+        },
+        {
+          title: "Développement back- end avec NodeJS",
+          skills: [
+            "Implémenter un modèle logique de données conformément à la réglementation",
+            "Mettre en oeuvre des opérations CRUD de manière sécurisée",
+            "Stocker des données de manière sécurisée",
+            "Déploiement d'un site web",
+          ],
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
   <section id="gallery">
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
-    <div class="project">
-      <img src="../assets/sept.png" alt="test" />
-      <h3>Test</h3>
-    </div>
+    <Project
+      v-for="(project, index) in projects"
+      :key="index"
+      :title="project.title"
+      :skills="project.skills"
+      :github="project.github"
+    />
   </section>
 </template>
 
@@ -99,7 +136,7 @@ img {
     padding: 0 25%;
   }
   section .project {
-    width: 42%;
+    width: 35%;
     max-width: 350px;
     display: flex;
     flex-direction: column;
@@ -113,7 +150,7 @@ img {
     flex-wrap: wrap;
   }
   section .project {
-    width: 35%;
+    width: 25%;
     display: flex;
   }
 }
