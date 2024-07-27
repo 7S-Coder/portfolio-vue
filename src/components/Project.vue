@@ -46,8 +46,9 @@ export default {
 .project:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #334447;
-  transform: scale(1.05);
   z-index: 10;
+
+  transform: scale(1.02);
 }
 
 h3 {

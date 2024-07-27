@@ -1,11 +1,4 @@
-<script setup>
-// defineProps({
-//   msg: {
-//     type: String,
-//     required: true,
-//   },
-// });
-</script>
+<script setup></script>
 
 <template>
   <nav>
@@ -29,28 +22,31 @@
 
 <style scoped>
 header {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 nav {
   position: fixed;
   top: 0px;
+  left: 0;
+  right: 0;
   background-color: #6fc1cf;
-  padding: 10px;
   width: 100%;
-  padding: 5px 11% 0;
+  padding: 5px 0;
+  z-index: 1000;
 
   display: flex;
+  justify-content: center;
 }
 
 nav ul {
   display: none;
-  margin-left: 50%;
+  /* margin-right: 10%; */
 }
 
 ul li {
   list-style-type: none;
   margin: 0 5px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 nav > div {
@@ -68,8 +64,8 @@ h1 {
   text-align: center;
   color: white;
   background-color: #6fc1cf;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 30px 0;
+  font-size: 2.6rem;
 }
 
 a {
@@ -77,9 +73,21 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #334447;
+}
+
 @media (min-width: 633px) {
+  nav {
+    justify-content: space-between;
+  }
   nav ul {
     display: flex;
+    margin-right: 3%;
+  }
+
+  nav div {
+    margin-left: 3%;
   }
 }
 </style>

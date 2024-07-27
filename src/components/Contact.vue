@@ -1,11 +1,4 @@
-<script setup>
-// defineProps({
-//   msg: {
-//     type: String,
-//     required: true,
-//   },
-// });
-</script>
+<script setup></script>
 
 <template>
   <form action="POST" name="contact" id="contact">
@@ -29,8 +22,9 @@
 form {
   background-color: #e4d7c4;
   color: white;
+  font-size: 1.2em;
   margin-top: 20px;
-  padding: 15px;
+  padding: 27px 15px;
 
   display: flex;
   flex-direction: column;
@@ -44,26 +38,25 @@ form > div input {
   width: 100%;
   border-radius: 5px;
   margin: 5px 0;
-  padding: 5px;
 }
 
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 #submit {
   width: 50%;
+  max-width: 200px;
   height: 40px;
   align-self: center;
 
   border-color: none;
   border-radius: 5px;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 15px 0 20px;
 
   color: white;
-  background-color: black;
+  background-color: #334447;
+  transition: 0.25s ease-in-out;
 }
 
 #submit:hover {
@@ -73,7 +66,7 @@ h2 {
 
 @media (min-width: 426px) {
   form {
-    padding: 0 25%;
+    padding: 27px 30px;
   }
 }
 </style>
