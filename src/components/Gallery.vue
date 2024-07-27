@@ -59,7 +59,7 @@ section {
 section .project {
   background-color: #6fc1cf;
   color: white;
-  transition: ease-in 0.1s;
+  /* transition: ease-in 0.1s; */
   border-radius: 10px;
 }
 

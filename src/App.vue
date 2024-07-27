@@ -26,6 +26,8 @@ import Story from "./components/Story.vue";
   margin: 0;
   padding: 0;
 
+  transition: ease-in 0.1s;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }

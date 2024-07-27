@@ -44,6 +44,7 @@ form > div input {
   width: 100%;
   border-radius: 5px;
   margin: 5px 0;
+  padding: 5px;
 }
 
 h2 {
@@ -52,7 +53,7 @@ h2 {
 }
 
 #submit {
-  width: 100%;
+  width: 50%;
   height: 40px;
   align-self: center;
 
