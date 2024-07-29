@@ -4,19 +4,13 @@
   <nav>
     <div>
       <a href="#">
-        <img src="../assets/sept.png" alt="Photo de moi" width="25px" />
+        <img src="../assets/sept.png" alt="Photo de moi" />
       </a>
     </div>
     <ul>
-      <a href="#story">
-        <li>Présentation</li>
-      </a>
-      <a href="#gallery">
-        <li>Projets</li>
-      </a>
-      <a href="#contact">
-        <li>Contact</li>
-      </a>
+      <li><a href="#story">Présentation</a></li>
+      <li><a href="#gallery">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <h1>Portfolio de Dylan Eglantine</h1>
@@ -32,7 +26,6 @@ nav {
   width: 100%;
   padding: 5px 0;
   z-index: 1000;
-
   display: flex;
   justify-content: center;
 }
@@ -52,13 +45,16 @@ nav > div {
   width: 25px;
   height: 25px;
   font-weight: bold;
-
   text-align: center;
   padding: 3px;
 }
 
-img,
-nav > div {
+img {
+  border-radius: 50%;
+  width: 25px; /* Utilisation de CSS pour définir la largeur */
+}
+
+nav div {
   border-radius: 50%;
 }
 
