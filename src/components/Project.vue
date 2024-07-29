@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project" @click="handleClick">
     <h3>{{ title }}</h3>
     <div class="spacing"></div>
     <ul>
@@ -28,12 +28,17 @@ export default {
       required: false,
     },
   },
+  methods: {
+    handleClick(event) {
+      this.$emit("click", event);
+    },
+  },
 };
 </script>
 
 <style scoped>
 .project {
-  background-color: #6fc1cf;
+  background-color: #31787c;
   color: white;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
@@ -70,7 +75,7 @@ a {
 }
 
 a:hover {
-  color: #6fc1cf;
+  color: #31787c;
 }
 
 .spacing {

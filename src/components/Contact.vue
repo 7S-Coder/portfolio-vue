@@ -57,14 +57,14 @@ h2 {
   border-radius: 5px;
   margin: 15px 0 20px;
 
-  color: white;
-  background-color: #31787c;
+  color: #31787c;
+  background-color: white;
   transition: 0.25s ease-in-out;
 }
 
 #submit:hover {
-  background-color: white;
-  color: #31787c;
+  background-color: #31787c;
+  color: white;
 }
 
 @media (min-width: 426px) {

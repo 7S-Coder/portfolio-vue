@@ -28,7 +28,7 @@ nav {
   top: 0px;
   left: 0;
   right: 0;
-  background-color: #6fc1cf;
+  background-color: #31787c;
   width: 100%;
   padding: 5px 0;
   z-index: 1000;
@@ -65,7 +65,7 @@ nav > div {
 h1 {
   text-align: center;
   color: white;
-  background-color: #6fc1cf;
+  background-color: #31787c;
   padding: 30px 0;
   font-size: 2.6rem;
 }
@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: #31787c;
+  text-decoration: underline;
 }
 
 @media (min-width: 633px) {
